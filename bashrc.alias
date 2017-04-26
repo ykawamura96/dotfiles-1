@@ -6,13 +6,17 @@ alias cd....='cd ../..'
 alias cd......='cd ../../..'
 
 # ROS
-alias irteusgl="rlwrap -c -b '(){}[],&^%$#@"";|\' irteusgl"
-alias roseus="rlwrap -c -b '(){}[],&^%$#@"";|\' roseus"
+# alias irteusgl="rlwrap -c -b '(){}[],&^%$#@"";|\' irteusgl"
+# alias roseus="rlwrap -c -b '(){}[],&^%$#@"";|\' roseus"
+# alias rossetmaster="rossetmaster;prompt_command"
+# alias rossetip="rossetip;prompt_command"
+alias eshell="emacs -nw -f shell"
+alias emasc="emacs"
+alias emcas="emacs"
 alias rl="roslaunch"
 alias rr="rosrun"
 alias rp="rostopic"
 alias rc='roscd'
-alias rp='rostopic'
 alias rpb='rostopic bw'
 alias rpe='rostopic echo'
 alias rph='rostopic hz'
