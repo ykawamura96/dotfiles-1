@@ -6,6 +6,7 @@
 (global-set-key "\C-o" 'other-window)
 (setq x-select-enable-clipboard t)
 
+(setq-default tab-width 4 indent-tabs-mode nil)
 
 (add-to-list 'load-path "/opt/ros/indigo/share/emacs/site-lisp")
 ;; or whatever your install space is + "/share/emacs/site-lisp"
