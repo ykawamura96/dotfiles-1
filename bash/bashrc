@@ -151,7 +151,7 @@ bind -x '"\C-r": _replace_by_history'
 #setup ROS
 source /opt/ros/indigo/setup.bash
 source ~/Projects/jsk_apc/devel/setup.bash
-rossetmaster
+rossetmaster 133.11.216.145 ## fetch15
 rossetip
 
 
