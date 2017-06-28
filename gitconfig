@@ -1,0 +1,7 @@
+[core]
+	editor = emacs -nw
+[user]
+	email = 708yamaguchi@gmail.com
+	name = Naoya Yamaguchi
+[credential]
+	helper = cache
