@@ -131,7 +131,7 @@ export OGRE_RTT_MODE=Copy
 # if [ "$DISPLAY" != "" ]; then
 #   xmodmap ~/.Xmodmap
 # fi
-xmodmap ~/.Xmodmap
+xmodmap ~/.Xmodmap &>/dev/null
 
 # history search bindkey
 _replace_by_history() {
@@ -147,12 +147,6 @@ bind -x '"\C-r": _replace_by_history'
 #   READLINE_POINT=${#l}
 # }
 # bind -x '"\C-o": _rostopic_list_percol'
-
-#setup ROS
-source /opt/ros/indigo/setup.bash
-source ~/Projects/jsk_apc/devel/setup.bash
-rossetmaster 133.11.216.145 ## fetch15
-rossetip
 
 
 # Google search
@@ -176,5 +170,11 @@ source ~/.bashrc.alias
 prompt_command(){
   PS1='${debian_chroot:+($debian_chroot)}\e[35m\u\e[0m at \e[33m\h\e[0m in \e[32m\W\e[35m$(parse_branch)\e[0m\n$ '
 }
-
 prompt_command
+
+
+# setup ROS (this must be after PS1 settings)
+source /opt/ros/indigo/setup.bash
+source ~/ros/indigo/devel/setup.bash
+rossetmaster
+rossetip
