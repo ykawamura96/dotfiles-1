@@ -63,10 +63,10 @@
 
 
 ;;input japanese in emacs
-(require 'mozc)
-(set-language-environment "Japanese")
-(setq default-input-method "japanese-mozc")
-(global-set-key (kbd "<zenkaku-hankaku>") 'toggle-input-method)
-;(global-set-key "\C-z" 'toggle-input-method)
+;; (require 'mozc)
+;; (set-language-environment "Japanese")
+;; (setq default-input-method "japanese-mozc")
+;; (global-set-key (kbd "<zenkaku-hankaku>") 'toggle-input-method)
+;; ;(global-set-key "\C-z" 'toggle-input-method)
 
 (global-unset-key "\C-\\")
