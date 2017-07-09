@@ -61,6 +61,7 @@
                     :background background-color
                     :underline nil)
 
+(show-paren-mode t)
 
 ;;input japanese in emacs
 ;; (require 'mozc)
