@@ -15,12 +15,12 @@
 
 
 (require 'whitespace)
-(setq whitespace-style '(face           ; face�ǲĻ벽
-                         trailing       ; ����
-                         ;tabs           ; ����
-                         spaces         ; ���ڡ���
-                         empty          ; ��Ƭ/�����ζ���
-                         space-mark     ; ɽ���Υޥåԥ�
+(setq whitespace-style '(face           ; face¤Ç²Ä»ë²½
+                         trailing       ; ¹ÔËö
+                         ;tabs           ; ¥¿¥Ö
+                         spaces         ; ¥¹¥Ú¡¼¥¹
+                         empty          ; ÀèÆ¬/ËöÈø¤Î¶õ¹Ô
+                         space-mark     ; É½¼¨¤Î¥Þ¥Ã¥Ô¥ó¥°
                          tab-mark
                          ))
 
@@ -35,10 +35,10 @@
       ;; If this is a problem for you, please, comment the line below.
 )
 
-;; ���ڡ��������ѤΤߤ�Ļ벽
+;; ¥¹¥Ú¡¼¥¹¤ÏÁ´³Ñ¤Î¤ß¤ò²Ä»ë²½
 (setq whitespace-space-regexp "\\(\u3000+\\)")
 
-;; ��¸���˼�ư�ǥ��꡼�󥢥å�
+;; ÊÝÂ¸Á°¤Ë¼«Æ°¤Ç¥¯¥ê¡¼¥ó¥¢¥Ã¥×
 (setq whitespace-action '(auto-cleanup))
 
 (global-whitespace-mode 1)
@@ -71,3 +71,35 @@
 ;; ;(global-set-key "\C-z" 'toggle-input-method)
 
 (global-unset-key "\C-\\")
+
+;; packages
+(require 'package)
+(add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t)
+(add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/"))
+(package-initialize)
+
+;; auto-complete
+(require 'auto-complete-config)
+(ac-config-default)
+(add-to-list 'ac-modes 'nxml-mode) ; nxml-modeを追加
+(setq ac-delay 0.05) ; auto-completeまでの時間
+(setq ac-auto-show-menu 0.1) ; メニューが表示されるまで
+(setq ac-use-fuzzy t) ; 曖昧マッチを有効に
+
+;; 行数を表示する
+(global-linum-mode t)
+
+;; 列数を表示する
+(column-number-mode t)
+
+;; スクロールは１行ごとに
+(setq scroll-conservatively 1)
+
+;; スクロール開始のマージンの行数
+(setq scroll-margin 5)
+
+;; active でない window の空 cursor を出さない
+(setq cursor-in-non-selected-windows nil)
+
+;; 現在の関数名の表示
+(which-function-mode 1)
