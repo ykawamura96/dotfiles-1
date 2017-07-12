@@ -184,8 +184,8 @@ rossetip
 id=$(xinput | grep TouchPad | grep -E -o "id=[[:digit:]]+" | grep -E -o "[[:digit:]]+")
 if [ "$id" = "" ]
 then
-    # echo "no touchpad found."
-    exit 0
+    echo "no touchpad found."
+    # exit 0
 fi
 status=$(xinput list-props 10 | grep "Device Enabled" | cut -f3)
 if [ $status -eq 0 ]
