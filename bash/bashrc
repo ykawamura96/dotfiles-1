@@ -175,12 +175,13 @@ prompt_command
 
 # setup ROS (this must be after PS1 settings)
 source /opt/ros/indigo/setup.bash
-source ~/Projects/jsk_apc/devel/setup.bash
+source ~/ros/indigo/devel/setup.bash
 rosdefault
 rossetip
 
 
 # ignore TouchPad
+if [ "$(xinput | grep TouchPad)" != "" ]; then
 id=$(xinput | grep TouchPad | grep -E -o "id=[[:digit:]]+" | grep -E -o "[[:digit:]]+")
 if [ "$id" = "" ]
 then
@@ -195,4 +196,5 @@ then
 else
     xinput set-prop $id "Device Enabled" 0
     # echo "disabling device $id"
+fi
 fi
