@@ -103,3 +103,5 @@
 
 ;; 現在の関数名の表示
 (which-function-mode 1)
+
+(add-hook 'after-init-hook #'global-flycheck-mode)
