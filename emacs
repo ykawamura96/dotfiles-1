@@ -107,8 +107,7 @@
 (add-hook 'after-init-hook #'global-flycheck-mode)
 
 ;; add extention to major mode
-(add-to-list 'auto-mode-alist '("\\.launch$" . xml-mode))
-(add-to-list 'auto-mode-alist '("\\.bash.*$" . shell-script-mode))
-(add-to-list 'auto-mode-alist '("\\bash.*$" . shell-script-mode))
-(add-to-list 'auto-mode-alist '("\\emacs$" . lisp-mode))
-(add-to-list 'auto-mode-alist '("\\.emacs$" . lisp-mode))
+(add-to-list 'auto-mode-alist '("\\.launch\\'" . xml-mode))
+(add-to-list 'auto-mode-alist '("\\.*bashrc.*\\'" . shell-script-mode))
+(add-to-list 'auto-mode-alist '("\\emacs\\'" . lisp-mode))
+(add-to-list 'auto-mode-alist '("\\.emacs\\'" . lisp-mode))
