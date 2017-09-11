@@ -6,6 +6,7 @@ alias cd....='cd ../..'
 alias cd......='cd ../../..'
 
 # ROS
+# alias
 # alias irteusgl="rlwrap -c -b '(){}[],&^%$#@"";|\' irteusgl"
 # alias roseus="rlwrap -c -b '(){}[],&^%$#@"";|\' roseus"
 # alias rossetmaster="rossetmaster;prompt_command"
@@ -20,6 +21,8 @@ alias rl="roslaunch"
 alias rr="rosrun"
 alias rp="rostopic"
 alias rc='roscd'
+alias re='rosed'
+alias rpa='rosparam'
 alias rpb='rostopic bw'
 alias rpe='rostopic echo'
 alias rph='rostopic hz'
@@ -29,10 +32,23 @@ alias rn='rosnode'
 alias rni='rosnode info'
 alias rnl='rosnode list'
 alias rnk='rosnode kill'
+alias rms='rosmsg'
 alias rs='rosservice'
 alias rsl='rosservice list'
 alias rqt_gui='rosrun rqt_gui rqt_gui'
 alias rqt_reconfigure='rosrun rqt_reconfigure rqt_reconfigure'
+
+# complete
+complete -F "_roscomplete_sub_dir" "rc"
+complete -F "_roscomplete_exe" "rr"
+complete -F "_roscomplete_file" "re"
+complete -F "_roscomplete_launch" "rl"
+complete -F "_roscomplete_rosnode" "rn"
+complete -F "_roscomplete_rosparam" "rpa"
+complete -F "_roscomplete_rostopic" "rp"
+complete -F "_roscomplete_rosservice" "rs"
+complete -F "_roscomplete_rosmsg" "rms"
+complete -F "_roscomplete_rossrv" "rs"
 
 # Git
 alias g=git
