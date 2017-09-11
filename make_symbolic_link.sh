@@ -12,3 +12,4 @@ eval ln -sf  $dotfiles_path/emacs ~/.emacs
 eval ln -sf  $dotfiles_path/profile ~/.profile
 eval ln -sf $dotfiles_path/Xmodmap ~/.Xmodmap
 eval ln -sf $dotfiles_path/xinputrc ~/.xinputrc
+eval ln -s $dotfiles_path/uim.d ~/.uim.d
