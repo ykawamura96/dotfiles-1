@@ -111,3 +111,4 @@
 (add-to-list 'auto-mode-alist '("\\.*bashrc.*\\'" . shell-script-mode))
 (add-to-list 'auto-mode-alist '("\\emacs\\'" . lisp-mode))
 (add-to-list 'auto-mode-alist '("\\.emacs\\'" . lisp-mode))
+(add-to-list 'auto-mode-alist '("\\.ino\\'" . c-mode))
