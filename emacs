@@ -79,12 +79,16 @@
 (package-initialize)
 
 ;; auto-complete
+;; DO NOT FORGET M-x package-list-packages
 (require 'auto-complete-config)
 (ac-config-default)
 (add-to-list 'ac-modes 'nxml-mode) ; nxml-modeを追加
 (setq ac-delay 0.05) ; auto-completeまでの時間
 (setq ac-auto-show-menu 0.1) ; メニューが表示されるまで
 (setq ac-use-fuzzy t) ; 曖昧マッチを有効に
+
+;; flycheck
+(add-hook 'after-init-hook #'global-flycheck-mode)
 
 ;; 行数を表示する
 (global-linum-mode t)
@@ -103,8 +107,6 @@
 
 ;; 現在の関数名の表示
 (which-function-mode 1)
-
-(add-hook 'after-init-hook #'global-flycheck-mode)
 
 ;; add extention to major mode
 (add-to-list 'auto-mode-alist '("\\.launch\\'" . xml-mode))
