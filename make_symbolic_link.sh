@@ -9,7 +9,11 @@ eval mkdir ~/.percol.d
 eval ln -sfn $dotfiles_path/percol.d/rc.py ~/.percol.d/rc.py
 eval ln -sf  $dotfiles_path/tmux.conf ~/.tmux.conf
 eval ln -sf  $dotfiles_path/emacs ~/.emacs
+eval rm -rf ~/.profile
 eval ln -sf  $dotfiles_path/profile ~/.profile
+eval rm -rf ~/.Xmodmap
 eval ln -sf $dotfiles_path/Xmodmap ~/.Xmodmap
+eval rm -rf ~/.xinputrc
 eval ln -sf $dotfiles_path/xinputrc ~/.xinputrc
-eval ln -s $dotfiles_path/uim.d ~/.uim.d
+eval rm -rf ~/.uim.d
+eval ln -sf $dotfiles_path/uim.d ~/.uim.d
