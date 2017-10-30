@@ -171,7 +171,9 @@ source ~/.bashrc.alias
 # setup ROS (this must be after PS1 settings)
 source /opt/ros/indigo/setup.bash
 source ~/ros/indigo/devel/setup.bash
+# setup ROS_MASTER_URI
 rosdefault
+# setup ROS_IP and ROS_HOSTNAME
 rossetip
 
 
