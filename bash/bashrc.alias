@@ -131,6 +131,9 @@ alias gvt='git verify-tag'
 alias gwc='git whatchanged -p --abbrev-commit --pretty=medium'
 alias gwip='git add -A; git ls-files --deleted -z | xargs -r0 git rm; git commit -m "--wip--"'
 
+# others
+alias jmanual='gnome-open /opt/ros/indigo/share/jskeus/doc/jmanual.pdf'
+
 # cannot execute
 #alias 'cd ....'='cd ../..'
 #alias cd ...... = 'cd ../../..'
