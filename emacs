@@ -116,3 +116,9 @@
 (add-to-list 'auto-mode-alist '("\\.emacs\\'" . lisp-mode))
 (add-to-list 'auto-mode-alist '("\\.ino\\'" . c-mode))
 (add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
+
+
+;; For Team K. This style of indentation is NOT recommended!!
+(add-hook 'lisp-mode-hook #'(lambda () (put 'if 'lisp-indent-function 1)))
+;; WIP : for defmethod
+;; (add-hook 'lisp-mode-hook #'(lambda () (put 'defmethod 'lisp-indent-function 2)))
