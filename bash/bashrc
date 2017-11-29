@@ -155,6 +155,11 @@ _rostopic_list_percol() {
 }
 bind -x '"\C-o": _rostopic_list_percol'
 
+# image_view
+image_view () {
+  rosrun image_view image_view image:=$@
+}
+
 # Google search
 google () {
   search=""
