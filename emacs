@@ -1,3 +1,26 @@
+;; package archives
+(require 'package)
+(add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t)
+(add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/"))
+(package-initialize)
+
+;; automatically install packages
+(defvar package-list
+  '(mozc
+    auto-complete
+    ;; fuzzy
+    ;; trr
+    flycheck
+    ;; flycheck-pos-tip
+    ;; flycheck-popup-tip
+    hl-todo
+    ))
+(unless package-archive-contents
+  (package-refresh-contents))
+(dolist (package package-list)
+  (unless (package-installed-p package)
+    (package-install package)))
+
 (setq inhibit-startup-message t)
 (prefer-coding-system 'utf-8)
 
