@@ -95,12 +95,6 @@
 
 (global-unset-key "\C-\\")
 
-;; packages
-(require 'package)
-(add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t)
-(add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/"))
-(package-initialize)
-
 ;; auto-complete
 ;; DO NOT FORGET M-x package-list-packages
 (require 'auto-complete-config)
