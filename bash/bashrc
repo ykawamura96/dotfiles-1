@@ -200,6 +200,7 @@ else
 fi
 fi
 
+# you can run `roseus` configuring by "$HOME/jskeus/eus"
 if [ -d "$HOME/jskeus" ]; then
     export EUSDIR=$HOME/jskeus/eus
     export ARCHDIR=Linux64
