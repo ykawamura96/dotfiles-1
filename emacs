@@ -9,7 +9,7 @@
   '(mozc
     auto-complete
     ;; fuzzy
-    ;; trr
+    trr
     flycheck
     ;; flycheck-pos-tip
     ;; flycheck-popup-tip
