@@ -27,6 +27,7 @@
 (global-set-key "\C-h" 'delete-backward-char)
 (global-set-key "\M-g" 'goto-line)
 (global-set-key "\C-o" 'other-window)
+(global-set-key "\C-l" 'linum-mode)
 (setq x-select-enable-clipboard t)
 
 (setq-default tab-width 4 indent-tabs-mode nil)
