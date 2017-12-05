@@ -16,7 +16,9 @@
     ;; flycheck-pos-tip
     ;; flycheck-popup-tip
     hl-todo
+    rainbow-delimiters
     ))
+
 (unless package-archive-contents
   (package-refresh-contents))
 (dolist (package package-list)
@@ -163,3 +165,20 @@
 ;; ("XXX"    . "#cc9393")
 ;; ("XXXX"   . "#cc9393")
 ;; ("???" . "#cc9393")
+
+;; to highlight lisp parenthesis
+(require 'rainbow-delimiters)
+(add-hook 'prog-mode-hook 'rainbow-delimiters-mode)
+
+;; color of parenthesis
+(setq rainbow-delimiters-max-face-count 5)
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(rainbow-delimiters-depth-1-face ((t (:foreground "white"))))
+ '(rainbow-delimiters-depth-2-face ((t (:foreground "blue"))))
+ '(rainbow-delimiters-depth-3-face ((t (:foreground "yellow"))))
+ '(rainbow-delimiters-depth-4-face ((t (:foreground "green"))))
+ '(rainbow-delimiters-depth-5-face ((t (:foreground "magenta")))))
