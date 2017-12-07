@@ -168,7 +168,7 @@
 
 ;; to highlight lisp parenthesis
 (require 'rainbow-delimiters)
-(add-hook 'prog-mode-hook 'rainbow-delimiters-mode)
+;; (add-hook 'prog-mode-hook 'rainbow-delimiters-mode)
 
 ;; color of parenthesis
 (setq rainbow-delimiters-max-face-count 5)
