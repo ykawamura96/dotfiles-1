@@ -5,12 +5,7 @@ alias cd..='cd ..'
 alias cd....='cd ../..'
 alias cd......='cd ../../..'
 
-# ROS
-# alias
-# alias irteusgl="rlwrap -c -b '(){}[],&^%$#@"";|\' irteusgl"
-# alias roseus="rlwrap -c -b '(){}[],&^%$#@"";|\' roseus"
-# alias rossetmaster="rossetmaster;prompt_command"
-# alias rossetip="rossetip;prompt_command"
+# emacs
 alias e="emacs -nw "
 alias es="emacs -nw -f shell"
 alias emacs-nw="emacs -nw"
@@ -18,6 +13,13 @@ alias eshell="emacs -nw -f shell"
 alias emasc="emacs"
 alias emcas="emacs"
 alias eamcs="emacs"
+
+# ROS
+# alias
+# alias irteusgl="rlwrap -c -b '(){}[],&^%$#@"";|\' irteusgl"
+# alias roseus="rlwrap -c -b '(){}[],&^%$#@"";|\' roseus"
+# alias rossetmaster="rossetmaster;prompt_command"
+# alias rossetip="rossetip;prompt_command"
 alias rl="roslaunch"
 alias rr="rosrun"
 alias rp="rostopic"
