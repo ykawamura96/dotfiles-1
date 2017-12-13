@@ -9,6 +9,7 @@ alias cd......='cd ../../..'
 alias e="emacs -nw "
 alias es="emacs -nw -f shell"
 alias emacs-nw="emacs -nw"
+alias eshel="emacs -nw -f shell"
 alias eshell="emacs -nw -f shell"
 alias emasc="emacs"
 alias emcas="emacs"
