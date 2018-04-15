@@ -33,10 +33,14 @@
 (global-set-key "\C-o" 'other-window)
 (global-set-key "\C-l" 'linum-mode)
 
+;; enlarge or shrink window
 (global-set-key (kbd "C-x C-<up>") 'enlarge-window)
 (global-set-key (kbd "C-x C-<down>") 'shrink-window)
 (global-set-key (kbd "C-x C-<right>") 'enlarge-window-horizontally)
 (global-set-key (kbd "C-x C-<left>") 'shrink-window-horizontally)
+
+;; flycheck keybind
+(global-set-key (kbd "C-c l") 'flycheck-list-errors)
 
 (setq x-select-enable-clipboard t)
 
