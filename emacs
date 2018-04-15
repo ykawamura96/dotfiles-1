@@ -32,6 +32,12 @@
 (global-set-key "\M-g" 'goto-line)
 (global-set-key "\C-o" 'other-window)
 (global-set-key "\C-l" 'linum-mode)
+
+(global-set-key (kbd "C-x C-<up>") 'enlarge-window)
+(global-set-key (kbd "C-x C-<down>") 'shrink-window)
+(global-set-key (kbd "C-x C-<right>") 'enlarge-window-horizontally)
+(global-set-key (kbd "C-x C-<left>") 'shrink-window-horizontally)
+
 (setq x-select-enable-clipboard t)
 
 (setq-default tab-width 4 indent-tabs-mode nil)
