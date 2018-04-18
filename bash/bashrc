@@ -179,7 +179,8 @@ source ~/ros/indigo/devel/setup.bash
 rosdefault
 # setup ROS_IP and ROS_HOSTNAME
 rossetip
-
+# for catkin source
+source `catkin locate --shell-verbs`
 
 # # ignore TouchPad
 # if [ "$(xinput | grep TouchPad)" != "" ]; then
