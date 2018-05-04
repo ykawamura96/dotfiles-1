@@ -41,7 +41,9 @@ alias rs='rosservice'
 alias rsl='rosservice list'
 alias rqt_gui='rosrun rqt_gui rqt_gui'
 alias rqt_reconfigure='rosrun rqt_reconfigure rqt_reconfigure'
-alias rossetfetch='rossetmaster fetch15'
+alias rossetfetch='rossetmaster fetch15.jsk.imi.i.u-tokyo.ac.jp'
+alias rossetpr1012='rossetmaster pr1012.jsk.imi.i.u-tokyo.ac.jp'
+alias rossetpr1040='rossetmaster pr1040.jsk.imi.i.u-tokyo.ac.jp'
 alias rosdep_install='rosdep install --from-paths $(echo "$(roscd; cd ../src; pwd)") --ignore-src -y -r'
 
 # complete
