@@ -5,3 +5,5 @@
 	name = Naoya Yamaguchi
 [credential]
 	helper = cache
+[http]
+	sslVerify = false
