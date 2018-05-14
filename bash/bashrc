@@ -216,6 +216,7 @@ export PATH=$HOME/.local/bin:$PATH
 
 # for ping with detailed information
 function pg(){
+    # set default value of $1
     host=${1:-"8.8.8.8"};
     while true; do rslt=`ping -w 1 -c 1 $host | grep 'bytes from '`;
         if [ $? -gt 0 ]; then echo -e "`date +'%Y-%m-%d %H:%M:%S'` $host Request timed out.";
@@ -223,4 +224,25 @@ function pg(){
             sleep 1;
         fi;
     done;
+}
+
+# for connect/disconnect to network
+function con(){
+    # if number of argments is 'g'reater 't'han 0, disconnect from wlan0
+    if [ $# -gt 0 ]; then
+        nmcli c up id $1;
+        if [ $? -eq 0 ]; then
+            echo "connect to $1";
+        # else
+        #     echo "cannot connect to $1";
+        fi;
+    else
+        network=${2:-"wlan0"};
+        nmcli d disconnect iface $network;
+        if [ $? -eq 0 ]; then
+            echo "disconnect from $network"
+        # else
+        #     echo "cannot disconnect from $network";
+        fi;
+    fi;
 }
