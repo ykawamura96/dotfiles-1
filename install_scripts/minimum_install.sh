@@ -19,3 +19,6 @@ pip install --upgrade pip
 pip install matplotlib
 pip install numpy
 pip install percol
+
+# from web source
+curl -L https://raw.githubusercontent.com/pyenv/pyenv-installer/master/bin/pyenv-installer | bash
