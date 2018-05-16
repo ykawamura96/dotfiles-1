@@ -50,15 +50,15 @@ For ROS installation, see `http://wiki.ros.org/ROS/Installation`.
 ```bash
 gnome-tweak-tool
 ```
-Typing -> Caps Lock key behavior -> Make Caps Lock an additinal Ctrl
+Select `Typing -> Caps Lock key behavior -> Make Caps Lock an additinal Ctrl`
 
 ### Setting Mozc for Japanese input
-First, at System Settings -> Text Entry -> Input sources to use,
+First, at `System Settings -> Text Entry -> Input sources to use`,
 Add `Japanese` and `Mozc`.
 
-Next, click keyboard icon at upper right side of window, and select Composition Mode -> Hiragana.
+Next, click keyboard icon at upper right side of window, and select `Composition Mode -> Hiragana`.
 
-Then, select Configure Current Input Method -> Global Config -> Hotkey -> Trigger Input Method and change CTRL_SHIFT to Zenkakuhankaku.
+Then, select `Configure Current Input Method -> Global Config -> Hotkey -> Trigger Input Method and change CTRL_SHIFT to Zenkakuhankaku`.
 
 ### Use google-chrome
 First, get `.deb` file from [google website](https://www.google.co.jp/chrome/).
