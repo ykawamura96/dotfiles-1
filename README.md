@@ -56,7 +56,9 @@ Typing -> Caps Lock key behavior -> Make Caps Lock an additinal Ctrl
 First, at System Settings -> Text Entry -> Input sources to use,
 Add `Japanese` and `Mozc`.
 
-Then, click keyboard icon at upper right side of window, and select Composition Mode -> Hiragana.
+Next, click keyboard icon at upper right side of window, and select Composition Mode -> Hiragana.
+
+Then, select Configure Current Input Method -> Global Config -> Hotkey -> Trigger Input Method and change CTRL_SHIFT to Zenkakuhankaku.
 
 ### Use google-chrome
 First, get `.deb` file from [google website](https://www.google.co.jp/chrome/).
