@@ -247,8 +247,12 @@ function con(){
         fi;
     fi;
 }
+
+# for pyenv
 export PATH="$HOME/.pyenv/bin:$PATH"
-# You may have to give write access to ~/.pyenv by 'sudo chmod 777 ~/.pyenv'
+eval "chmod 777 ~/.pyenv"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 export VIRTUAL_ENV_DISABLE_PROMPT=1
+# enable python 3.5 in anaconda in pyenv
+source activate python3.5
