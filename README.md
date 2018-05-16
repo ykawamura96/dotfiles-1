@@ -6,8 +6,9 @@ In this procedure, some `apt` and `pip` packages are installed.
 sudo apt-get install git
 cd ~
 git clone https://github.com/708yamaguchi/dotfiles.git
-chmod u+x ./dotfiles/install_scripts/minimum_install.sh
-./minimul_install.sh
+cd ./dotfiles/install_scripts
+chmod u+x minimum_install.sh
+sudo ./minimul_install.sh
 ```
 
 ## 2. Create symbolic links to setting files
