@@ -46,11 +46,26 @@ sudo service restart ntp
 ### Install ROS
 For ROS installation, follow instructions in `http://wiki.ros.org/ROS/Installation`. At this stage, you install minimum required packages for ROS.
 
-Next,install some packages for `JSK` environment:
+Next, install some packages for `JSK` environment:
 ```bash
 sudo apt-get install python-catkin tools
 sudo apt-get install ros-$(rosversion -d)-jsk-tools
 sudo apt-get install ros-$(rosversion -d)-rosemacs
+```
+
+In order to create ROS workspace, do
+```bash
+mkdir -p ~/catkin_ws/src
+cd ~/catkin_ws/src
+catkin init
+cd src
+wstool init .
+wstool set ~~~
+wstool update
+rosdep update
+rosdep isntall --from-paths . --ignore-src -y -r
+cd ..
+catkin build
 ```
 
 ### Make Caps additional Ctrl
