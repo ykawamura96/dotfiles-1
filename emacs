@@ -13,6 +13,7 @@
     ;; fuzzy
     trr
     flycheck
+    markdown-mode
     ;; flycheck-pos-tip
     ;; flycheck-popup-tip
     hl-todo
