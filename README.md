@@ -36,10 +36,9 @@ sudo service ssh restart
 At last, make and edit `~/.ssh/authorized_keys` and `~/.ssh/config`
 
 ### Setting ntp
-For security,
+For security, `disable monitor` in `/etc/ntp.conf`. Then,
 ```bash
-disable monitor
-sudo service restart ntp
+sudo service ntp restart
 ```
 
 ### Install ROS
