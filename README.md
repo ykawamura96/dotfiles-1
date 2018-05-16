@@ -42,7 +42,7 @@ sudo service ntp restart
 ```
 
 ### Install ROS
-For ROS installation, follow instructions in `http://wiki.ros.org/ROS/Installation`. At this stage, you install minimum required packages for ROS.
+For ROS installation, follow instructions in [ROS Installation](http://wiki.ros.org/ROS/Installation). At this stage, you install minimum required packages for ROS.
 
 Next, install some packages for `JSK` environment:
 ```bash
