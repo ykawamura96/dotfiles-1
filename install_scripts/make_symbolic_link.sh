@@ -23,3 +23,5 @@ eval rm -rf ~/.xinputrc
 eval ln -sf $dotfiles_path/xinputrc ~/.xinputrc
 eval rm -rf ~/.uim.d
 eval ln -sf $dotfiles_path/uim.d ~/.uim.d
+eval rm -rf ~/.condarc
+eval ln -sf $dotfiles_path/condarc ~/.condarc
