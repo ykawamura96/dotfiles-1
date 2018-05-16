@@ -25,7 +25,7 @@ Generate ssh key.
 ```bash
 ssh-keygen -t rsa
 ```
-In `etc/ssh/sshd_config`,
+In `/etc/ssh/sshd_config`,
 ```
 PermitRootLogin no
 PasswordAuthentication no
