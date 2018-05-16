@@ -4,4 +4,5 @@ export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 pyenv install anaconda3-4.3.1
+source activate python3.5
 conda create -n python3.5 python=3.5 anaconda
