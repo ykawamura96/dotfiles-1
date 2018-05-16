@@ -20,7 +20,8 @@ In this step, setting files for some packages get located in the form of symboli
 ~/dotfiles/install_scripts/make_symbolic_link.sh
 ```
 
-## 4. Setting ssh
+## 4. Others
+### Setting ssh
 Generate ssh key.
 ```bash
 ssh-keygen -t rsa
@@ -31,17 +32,23 @@ PermitRootLogin no
 PasswordAuthentication no
 ```
 After the above, restart ssh.
-```
+```bash
 sudo service ssh restart
 ```
 At last, make and edit `~/.ssh/authorized_keys` and `~/.ssh/config`
 
-# 5. Setting ntp
+### Setting ntp
 For security,
-```
+```bash
 disable monitor
 sudo service restart ntp
 ```
 
-# 6. Install ROS
+### Install ROS
 For ROS installation, see `http://wiki.ros.org/ROS/Installation`.
+
+### Make Caps additional Ctrl
+```bash
+gnome-tweak-tool
+```
+Typing -> Caps Lock key behavior -> Make Caps Lock an additinal Ctrl
