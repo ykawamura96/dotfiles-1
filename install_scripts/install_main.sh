@@ -35,3 +35,7 @@ done
 
 # from web source
 curl -L https://raw.githubusercontent.com/pyenv/pyenv-installer/master/bin/pyenv-installer | bash
+
+# other packages (complex procedure)
+./install_ffmpeg.sh
+./install_tmux2.5.sh
