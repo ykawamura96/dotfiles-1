@@ -54,7 +54,7 @@ sudo apt-get install ros-$(rosversion -d)-rosemacs
 In order to create ROS workspace, do
 ```bash
 mkdir -p ~/catkin_ws/src
-cd ~/catkin_ws/src
+cd ~/catkin_ws
 catkin init
 cd src
 wstool init .
