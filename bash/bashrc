@@ -248,9 +248,10 @@ function con(){
     fi;
 }
 
-# for pyenv
-export PATH="$HOME/.pyenv/bin:$PATH"
-eval "chmod 777 ~/.pyenv"
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
-export VIRTUAL_ENV_DISABLE_PROMPT=1
+function activate(){
+    version=${1:-"python3.5"};
+    export PATH=~/.pyenv/versions/anaconda3-4.3.1/bin:$PATH;
+    source ~/.pyenv/versions/anaconda3-4.3.1/bin/activate;
+    source activate $version;
+    export VIRTUAL_ENV_DISABLE_PROMPT=1;
+    }
