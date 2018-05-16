@@ -33,9 +33,7 @@ for pip_package in ${pip_packages[@]}; do
     apt-get -y install $pip_package;
 done
 
-# from web source
-curl -L https://raw.githubusercontent.com/pyenv/pyenv-installer/master/bin/pyenv-installer | bash
-
 # other packages (complex procedure)
-./install_ffmpeg.sh
-./install_tmux2.5.sh
+./install_scripts/install_ffmpeg.sh
+./install_scripts/install_tmux2.5.sh
+./install_scripts/install_anaconda.sh
