@@ -51,3 +51,23 @@ For ROS installation, see `http://wiki.ros.org/ROS/Installation`.
 gnome-tweak-tool
 ```
 Typing -> Caps Lock key behavior -> Make Caps Lock an additinal Ctrl
+
+### Setting Mozc for Japanese input
+First, at System Settings -> Text Entry -> Input sources to use,
+Add `Japanese` and `Mozc`.
+
+Then, click keyboard icon at upper right side of window, and select Composition Mode -> Hiragana.
+
+### Use google-chrome
+First, get `.deb` file from [google website](https://www.google.co.jp/chrome/).
+
+Next,
+```bash
+sudo apt-get install libappindicator1
+sudo dpkg -i (google-chrome-installer-name).deb
+```
+Now, you can start `google chrome` by typing below:
+```
+google-chrome
+```
+It may be good if you set `google-chrome` as default browser, lock it to launcher and use your own google acount to share passwards, bookmarks or extentions.
