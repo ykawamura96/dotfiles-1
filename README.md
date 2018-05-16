@@ -44,7 +44,14 @@ sudo service restart ntp
 ```
 
 ### Install ROS
-For ROS installation, see `http://wiki.ros.org/ROS/Installation`.
+For ROS installation, follow instructions in `http://wiki.ros.org/ROS/Installation`. At this stage, you install minimum required packages for ROS.
+
+Next,install some packages for `JSK` environment:
+```bash
+sudo apt-get install python-catkin tools
+sudo apt-get install ros-$(rosversion -d)-jsk-tools
+sudo apt-get install ros-$(rosversion -d)-rosemacs
+```
 
 ### Make Caps additional Ctrl
 ```bash
