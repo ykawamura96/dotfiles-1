@@ -7,8 +7,8 @@ sudo apt-get install git
 cd ~
 git clone https://github.com/708yamaguchi/dotfiles.git
 cd ./dotfiles/install_scripts
-chmod u+x minimum_install.sh
-sudo ./minimul_install.sh
+chmod u+x install_main.sh
+sudo ./install_main.sh
 ```
 
 ## 2. Create symbolic links to setting files
