@@ -1,4 +1,3 @@
-
 ;; package archives
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
@@ -47,7 +46,7 @@
 
 (setq-default tab-width 4 indent-tabs-mode nil)
 
-(require 'subr-x)
+(require 'subr-x) ;; this package requires Emacs 24.4 or newer
 (add-to-list 'load-path (concat "/opt/ros/" (string-trim (shell-command-to-string "rosversion -d")) "/share/emacs/site-lisp"))
 ;; or whatever your install space is + "/share/emacs/site-lisp"
 (require 'rosemacs-config)
