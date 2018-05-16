@@ -15,7 +15,9 @@ sudo ./minimul_install.sh
 In this step, setting files for some packages get located in the form of symbolic link.
 ```
 ~/dotfiles/install_scripts/make_symbolic_link.sh
+exec bash
 ```
+At this stage, there are some errors which is solved at later stages.
 
 ## 3. Others
 ### Setting ssh
