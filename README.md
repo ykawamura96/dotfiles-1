@@ -3,24 +3,20 @@
 ## 1. Install minimum required packages
 In this procedure, some `apt` and `pip` packages are installed.
 ```bash
-sudo apt-get install wget
-wget https://raw.githubusercontent.com/708yamaguchi/dotfiles/master/install_scripts/minimum_install.sh -O ~/minimum_install.sh
-sudo ./minimum_install.sh
-```
-
-## 2. Clone this repository
-```bash
+sudo apt-get install git
 cd ~
 git clone https://github.com/708yamaguchi/dotfiles.git
+chmod u+x ./dotfiles/install_scripts/minimum_install.sh
+./minimul_install.sh
 ```
 
-## 3. Create symbolic links to setting files
+## 2. Create symbolic links to setting files
 In this step, setting files for some packages get located in the form of symbolic link.
 ```
 ~/dotfiles/install_scripts/make_symbolic_link.sh
 ```
 
-## 4. Others
+## 3. Others
 ### Setting ssh
 Generate ssh key.
 ```bash
