@@ -46,7 +46,7 @@ For ROS installation, follow instructions in [ROS Installation](http://wiki.ros.
 
 Next, install some packages for `JSK` environment:
 ```bash
-sudo apt-get install python-catkin tools
+sudo apt-get install python-catkin-tools
 sudo apt-get install ros-$(rosversion -d)-jsk-tools
 sudo apt-get install ros-$(rosversion -d)-rosemacs
 ```
