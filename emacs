@@ -158,6 +158,12 @@
 ;; WIP : for defmethod
 ;; (add-hook 'lisp-mode-hook #'(lambda () (put 'defmethod 'lisp-indent-function 2)))
 
+;; For Python tab indentation 4 spaces
+(add-hook 'python-mode-hook
+  (lambda ()
+    (setq indent-tabs-mode t)
+    (setq tab-width 4)
+    (setq python-indent 4)))
 
 ;; highlight special keywords
 (require 'hl-todo)
