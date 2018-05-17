@@ -44,7 +44,12 @@ In `/etc/ssh/sshd_config`,
 PermitRootLogin no
 PasswordAuthentication no
 ```
-Next, save the `~/.ssh/rsa.pub` to `https://github.com/(yourname).keys`
+Next, save the `~/.ssh/rsa.pub` to your github repository.
+
+If you want to ssh to your computer,
+```bash
+wget https://github.com/708yamaguchi.keys -O ~/.ssh/authorized_keys
+```
 
 After the above, restart ssh.
 ```bash
