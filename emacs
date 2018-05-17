@@ -7,6 +7,8 @@
 (package-initialize)
 
 ;; automatically install packages
+;; If you cannot install some of packages below, use
+;; (package-refresh-contents) or M-x package-refresh-contents
 (defvar package-list
   '(mozc
     auto-complete
