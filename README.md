@@ -66,8 +66,9 @@ sudo service ntp restart
 ### Install ROS
 For ROS installation, follow instructions in [ROS Installation](http://wiki.ros.org/ROS/Installation). At this stage, you install minimum required packages for ROS.
 
-Next, install some packages for `JSK` environment:
+After installing ROS, install some packages for `JSK` environment:
 ```bash
+exec bash
 sudo apt-get install python-catkin-tools
 sudo apt-get install ros-$(rosversion -d)-jsk-tools
 sudo apt-get install ros-$(rosversion -d)-rosemacs
