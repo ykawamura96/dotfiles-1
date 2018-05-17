@@ -255,4 +255,9 @@ function activate(){
     export VIRTUAL_ENV_DISABLE_PROMPT=1;
     }
 
+
 export TERM=xterm
+
+## CUDA and cuDNN paths
+export PATH=/usr/local/cuda-8.0/bin:${PATH}
+export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64:${LD_LIBRARY_PATH}
