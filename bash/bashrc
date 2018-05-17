@@ -173,9 +173,8 @@ google () {
 source ~/.bashrc.alias
 
 # setup ROS (this must be after PS1 settings)
-catkin_ws_path=~/ros/indigo
 source /opt/ros/$(ls /opt/ros)/setup.bash
-source $catkin_ws_path/devel/setup.bash
+source $(find $HOME -name ".catkin_tools" 2>/dev/null | sed -n 1p | sed s#.catkin_tools#devel/setup.bash#)
 # setup ROS_MASTER_URI
 rosdefault
 # setup ROS_IP and ROS_HOSTNAME
