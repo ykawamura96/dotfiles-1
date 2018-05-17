@@ -19,6 +19,13 @@ exec bash
 At this stage, there are some errors which is solved at later stages.
 
 ## 3. Others
+### Make Caps additional Ctrl
+```bash
+gnome-tweak-tool
+```
+Select `Typing -> Caps Lock key behavior -> Make Caps Lock an additinal Ctrl`
+
+
 ### Use google-chrome
 First, get `.deb` file from [google website](https://www.google.co.jp/chrome/).
 
@@ -89,11 +96,6 @@ cd ..
 catkin build
 ```
 
-### Make Caps additional Ctrl
-```bash
-gnome-tweak-tool
-```
-Select `Typing -> Caps Lock key behavior -> Make Caps Lock an additinal Ctrl`
 
 ### Setting Mozc for Japanese input
 First, at `System Settings -> Text Entry -> Input sources to use`,
