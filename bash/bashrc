@@ -254,3 +254,5 @@ function activate(){
     source activate $version;
     export VIRTUAL_ENV_DISABLE_PROMPT=1;
     }
+
+export TERM=xterm
