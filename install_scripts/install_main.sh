@@ -30,7 +30,7 @@ pip_packages=(
     percol
 )
 for pip_package in ${pip_packages[@]}; do
-    apt-get -y install $pip_package;
+    pip install $pip_package;
 done
 
 # other packages (complex procedure)
