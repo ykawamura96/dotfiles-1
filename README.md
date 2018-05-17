@@ -29,6 +29,8 @@ In `/etc/ssh/sshd_config`,
 PermitRootLogin no
 PasswordAuthentication no
 ```
+Next, save the `~/.ssh/rsa.pub` to `https://github.com/(yourname).keys`
+
 After the above, restart ssh.
 ```bash
 sudo service ssh restart
