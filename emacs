@@ -126,6 +126,7 @@
 
 ;; flycheck
 (add-hook 'after-init-hook #'global-flycheck-mode)
+(add-hook 'python-mode-hook '(lambda () (flycheck-select-checker 'python-flake8)))
 
 ;; 行数を表示する
 (global-linum-mode t)
@@ -166,6 +167,7 @@
     (setq indent-tabs-mode nil)
     (setq tab-width 4)
     (setq python-indent 4)))
+
 
 ;; highlight special keywords
 (require 'hl-todo)
