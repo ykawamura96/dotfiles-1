@@ -25,6 +25,7 @@ done
 # pip install
 pip install --upgrade pip
 pip_packages=(
+    flake8
     matplotlib
     numpy
     percol
