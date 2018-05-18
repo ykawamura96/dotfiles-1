@@ -19,9 +19,9 @@ eval rm -rf ~/.profile
 eval ln -sf  $dotfiles_path/profile ~/.profile
 eval rm -rf ~/.Xmodmap
 eval ln -sf $dotfiles_path/Xmodmap ~/.Xmodmap
-eval rm -rf ~/.xinputrc
-eval ln -sf $dotfiles_path/xinputrc ~/.xinputrc
-eval rm -rf ~/.uim.d
-eval ln -sf $dotfiles_path/uim.d ~/.uim.d
+# eval rm -rf ~/.xinputrc
+# eval ln -sf $dotfiles_path/xinputrc ~/.xinputrc
+# eval rm -rf ~/.uim.d
+# eval ln -sf $dotfiles_path/uim.d ~/.uim.d
 eval rm -rf ~/.condarc
 eval ln -sf $dotfiles_path/condarc ~/.condarc
