@@ -34,7 +34,8 @@ for pip_package in ${pip_packages[@]}; do
     pip install $pip_package;
 done
 
-# other packages (complex procedure)
+# other settings
+./install_scripts/setup.sh
 ./install_scripts/install_ffmpeg.sh
 ./install_scripts/install_tmux2.5.sh
 ./install_scripts/install_anaconda.sh
