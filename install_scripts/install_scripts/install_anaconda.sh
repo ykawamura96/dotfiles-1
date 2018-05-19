@@ -8,6 +8,6 @@ git clone https://github.com/yyuu/pyenv-pip-rehash.git ~/.pyenv/plugins/pyenv-pi
 export PYENV_ROOT=$HOME/.pyenv
 export PATH=$PYENV_ROOT/bin:$PATH
 eval "$(pyenv init -)"
-pyenv install anaconda3-4.3.1
+pyenv install -s anaconda3-4.3.1
 pyenv global anaconda3-4.3.1
 conda create -n python3.5 python=3.5 anaconda
