@@ -19,5 +19,5 @@ apt_packages=(
 )
 
 for apt_package in ${apt_packages[@]}; do
-    apt-get -y install $apt_package;
+    apt -y install $apt_package;
 done
