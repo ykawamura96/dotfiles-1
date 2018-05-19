@@ -142,6 +142,11 @@ alias gwip='git add -A; git ls-files --deleted -z | xargs -r0 git rm; git commit
 # others
 alias jmanual='gnome-open /opt/ros/indigo/share/jskeus/doc/jmanual.pdf'
 alias grep='grep --color'
+if [ $(which gnome-open) ]; then
+    alias open='gnome-open'
+elif [ $(which xdg-open) ]; then
+    alias open='xdg-open'
+fi
 
 # cannot execute
 #alias 'cd ....'='cd ../..'
