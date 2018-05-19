@@ -1,41 +1,10 @@
 #!/bin/bash
 
-# apt-get install
-apt_packages=(
-    apt
-    aptitude
-    emacs
-    ibus-mozc
-    indicator-multiload
-    ipython
-    git
-    gnome-tweak-tool
-    htop
-    ntp
-    python-pip
-    ssh
-    subversion
-    wget
-)
-
-for apt_package in ${apt_packages[@]}; do
-    apt-get -y install $apt_package;
-done
-
-# pip install
-pip install --upgrade pip
-pip_packages=(
-    flake8
-    matplotlib
-    numpy
-    percol
-)
-for pip_package in ${pip_packages[@]}; do
-    pip install $pip_package;
-done
-
-# other settings
-./install_scripts/setup.sh
-./install_scripts/install_ffmpeg.sh
-./install_scripts/install_tmux2.5.sh
-./install_scripts/install_anaconda.sh
+# scripts
+./includes/install_apt.sh
+./includes/install_pip.sh
+./includes/setup.sh
+./includes/install_ffmpeg.sh
+./includes/install_tmux2.5.sh
+./includes/install_anaconda.sh
+./includes/install_mozc.sh
