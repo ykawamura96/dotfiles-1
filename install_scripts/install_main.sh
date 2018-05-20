@@ -22,6 +22,7 @@ for script in ${scripts[@]}; do
     for i in `seq $(expr $max_sharp / $script_num)`; do
         progress=$progress"#";
     done;
+    echo -e "\033[0;32mdone $script\033[0;39m"
     echo -e "\033[0;32m$progress""  $(expr $(expr 100 \* $loop_count) / $script_num)%\033[0;39m"
     loop_count=$(( loop_count + 1 ))
 done;
