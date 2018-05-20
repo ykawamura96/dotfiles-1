@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # for System monitor preferences
 if [ -e /usr/share/indicator-multiload/preferences.ui ]; then
     cp ./preferences.ui /usr/share/indicator-multiload/preferences.ui -f;

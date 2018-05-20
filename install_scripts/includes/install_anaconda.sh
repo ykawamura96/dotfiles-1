@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # from web source
 # for ubuntu 14.04?
 # curl -L https://raw.githubusercontent.com/pyenv/pyenv-installer/master/bin/pyenv-installer | bash

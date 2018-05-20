@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # symbolic link
 dotfiles_path=$HOME/dotfiles
 symbolic_links=(

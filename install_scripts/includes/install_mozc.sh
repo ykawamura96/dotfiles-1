@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # get integer part of ubuntu version
 version="$(cat /etc/lsb-release | sed -n /DISTRIB_RELEASE/p | awk -F'[=]' '{print $2}')"
 
