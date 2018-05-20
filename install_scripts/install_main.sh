@@ -14,7 +14,9 @@ scripts=(
 progress="";
 loop_count=1;
 for script in ${scripts[@]}; do
-    # ./includes/$script;
+    # main script
+    ./includes/$script;
+    # show progress
     max_sharp=$(( $(tput cols) - 5))
     script_num=${#scripts[@]}
     for i in `seq $(expr $max_sharp / $script_num)`; do
