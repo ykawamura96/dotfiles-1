@@ -4,7 +4,7 @@
 apt_packages=(
     apt
     aptitude
-    emacs
+    # emacs
     ibus-mozc
     indicator-multiload
     ipython

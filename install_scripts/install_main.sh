@@ -5,6 +5,7 @@ scripts=(
     install_apt.sh
     install_pip.sh
     setup.sh
+    isntall_emacs_24_4.sh
     install_ffmpeg.sh
     install_tmux2.5.sh
     install_anaconda.sh
