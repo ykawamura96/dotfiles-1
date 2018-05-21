@@ -12,4 +12,4 @@ export PATH=$PYENV_ROOT/bin:$PATH
 eval "$(pyenv init -)"
 pyenv install -s anaconda3-4.3.1
 pyenv global anaconda3-4.3.1
-conda create -n python3.5 python=3.5 anaconda
+conda create -n python3.5 python=3.5 anaconda --yes
