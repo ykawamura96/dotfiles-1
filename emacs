@@ -119,7 +119,7 @@
 (require 'auto-complete-config)
 (ac-config-default)
 (add-to-list 'ac-modes 'nxml-mode) ; nxml-modeを追加
-(add-to-list 'ac-modes 'shell-mode) ; shell-modeを追加(eg. emacs-shell)
+;; (add-to-list 'ac-modes 'shell-mode) ; shell-modeを追加(eg. emacs-shell)
 (setq ac-delay 0.05) ; auto-completeまでの時間
 (setq ac-auto-show-menu 0.1) ; メニューが表示されるまで
 (setq ac-use-fuzzy t) ; 曖昧マッチを有効に
