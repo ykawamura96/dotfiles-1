@@ -175,6 +175,7 @@ source ~/.bashrc.alias
 # setup ROS (this must be after PS1 settings)
 source /opt/ros/$(ls /opt/ros)/setup.bash
 source $(locate .catkin_tools | sed -n 1p | sed s#.catkin_tools#devel/setup.bash#)
+echo "CMAKE_PREFIX_PATH: ""$CMAKE_PREFIX_PATH"
 # setup ROS_MASTER_URI
 rosdefault
 # setup ROS_IP and ROS_HOSTNAME
