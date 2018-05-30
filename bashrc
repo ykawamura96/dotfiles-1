@@ -182,6 +182,8 @@ rosdefault
 rossetip
 # for catkin source
 source `catkin locate --shell-verbs`
+# set ROS default editor as emacs -nw
+export EDITOR='emacs -nw'
 
 # # ignore TouchPad
 # if [ "$(xinput | grep TouchPad)" != "" ]; then
