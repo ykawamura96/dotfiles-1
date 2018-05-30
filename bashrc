@@ -256,7 +256,7 @@ function activate(){
     export VIRTUAL_ENV_DISABLE_PROMPT=1;
     }
 
-
+# for terminal color
 export TERM=xterm
 
 ## CUDA and cuDNN paths
