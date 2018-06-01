@@ -19,6 +19,7 @@
     ;; flycheck-pos-tip
     ;; flycheck-popup-tip
     hl-todo
+    yaml-mode
     ;; rainbow-delimiters
     ))
 
