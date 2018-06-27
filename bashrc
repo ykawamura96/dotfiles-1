@@ -1,8 +1,8 @@
 # for tmux
-if [ $SHLVL = 1 ]; then
-    export PATH=$HOME/.local/bin:$PATH
-    tmux
-fi
+# if [ $SHLVL = 1 ]; then
+#     export PATH=$HOME/.local/bin:$PATH
+#     tmux
+# fi
 
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
