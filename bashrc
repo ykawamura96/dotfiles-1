@@ -1,3 +1,9 @@
+# for tmux
+if [ $SHLVL = 1 ]; then
+    export PATH=$HOME/.local/bin:$PATH
+    tmux
+fi
+
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
@@ -213,9 +219,6 @@ if [ -d "$HOME/jskeus" ]; then
     export LD_LIBRARY_PATH=$EUSDIR/$ARCHDIR/bin:$LD_LIBRARY_PATH
     echo "EUSDIR: $EUSDIR"
 fi
-
-# for tmux2.5
-export PATH=$HOME/.local/bin:$PATH
 
 # for ping with detailed information
 function pg(){
