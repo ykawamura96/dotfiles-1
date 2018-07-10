@@ -269,8 +269,8 @@ function mvtk_activate(){
 export TERM=xterm
 
 ## CUDA and cuDNN paths
-export PATH=/usr/local/cuda-8.0/bin:${PATH}
-export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64:${LD_LIBRARY_PATH}
+export PATH=/usr/local/cuda/bin:${PATH}
+export LD_LIBRARY_PATH=/usr/local/cuda/lib64:${LD_LIBRARY_PATH}
 
 ## for japanese input using ibus-mozc
 killall ibus-daemon > /dev/null
