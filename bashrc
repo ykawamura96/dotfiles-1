@@ -261,6 +261,10 @@ function activate(){
     export VIRTUAL_ENV_DISABLE_PROMPT=1;
     }
 
+function mvtk_activate(){
+    source ~/mvtk/.anaconda/bin/activate;
+}
+
 # for terminal color
 export TERM=xterm
 
