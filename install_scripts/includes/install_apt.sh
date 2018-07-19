@@ -15,6 +15,7 @@ apt_packages=(
     python-pip
     ssh
     subversion
+    xsel
     wget
 )
 

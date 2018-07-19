@@ -206,3 +206,18 @@
 ;;  '(rainbow-delimiters-depth-3-face ((t (:foreground "yellow"))))
 ;;  '(rainbow-delimiters-depth-4-face ((t (:foreground "green"))))
 ;;  '(rainbow-delimiters-depth-5-face ((t (:foreground "magenta")))))
+
+
+;; copy paste settings
+(if (eq system-type 'darwin)
+  (setq x-select-enable-clipboard t)
+  (defun xsel-cut-function (text &optional push)
+    (with-temp-buffer
+      (insert text)
+      (call-process-region (point-min) (point-max) "xsel" nil 0 nil "--clipboard" "--input")))
+  (defun xsel-paste-function()
+    (let ((xsel-output (shell-command-to-string "xsel --clipboard --output")))
+      (unless (string= (car kill-ring) xsel-output)
+        xsel-output )))
+  (setq interprogram-cut-function 'xsel-cut-function)
+    (setq interprogram-paste-function 'xsel-paste-function))
