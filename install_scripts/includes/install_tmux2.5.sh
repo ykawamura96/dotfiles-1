@@ -4,10 +4,6 @@ if [ "$(uname)" != "Linux" ]; then
   exit 1
 fi
 
-if [ -f ~/.local/bin/tmux ]; then
-  exit 0
-fi
-
 sudo -H apt-get install -qq -y libevent-dev libncurses-dev
 
 TMPDIR=$(mktemp -d)
@@ -18,8 +14,8 @@ wget -q https://github.com/tmux/tmux/releases/download/${VERSION}/tmux-${VERSION
 tar zxf tmux-${VERSION}.tar.gz
 cd tmux-${VERSION}
 
-./configure --prefix=$HOME/.local
-make -j
-make install
+./configure
+make -j4
+sudo make install
 
 rm -rf $TMPDIR
