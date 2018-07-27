@@ -141,7 +141,7 @@ alias gwc='git whatchanged -p --abbrev-commit --pretty=medium'
 alias gwip='git add -A; git ls-files --deleted -z | xargs -r0 git rm; git commit -m "--wip--"'
 
 # others
-alias jmanual='open /opt/ros/indigo/share/jskeus/doc/jmanual.pdf'
+alias jmanual='open /opt/ros/indigo/share/jskeus/doc/jmanual.pdf && exit'
 alias grep='grep --color'
 alias colors='~/dotfiles/others/bash_colors.sh'
 if [ $(which gnome-open) ]; then
