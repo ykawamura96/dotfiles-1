@@ -13,3 +13,7 @@ gsettings set com.canonical.indicator.datetime show-day true
 gsettings set com.canonical.indicator.datetime show-date true
 gsettings set com.canonical.indicator.datetime time-format 24-hour
 gsettings set com.canonical.indicator.datetime show-seconds true
+
+# Enable workspace (2*2)
+gsettings set org.compiz.core:/org/compiz/profiles/unity/plugins/core/ hsize 2
+gsettings set org.compiz.core:/org/compiz/profiles/unity/plugins/core/ vsize 2
