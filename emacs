@@ -35,7 +35,7 @@
 (global-set-key "\C-h" 'delete-backward-char)
 (global-set-key "\M-g" 'goto-line)
 (global-set-key "\C-o" 'other-window)
-(global-set-key "\C-l" 'linum-mode)
+(global-set-key (kbd "\C-x l") 'linum-mode)
 
 ;; enlarge or shrink window
 (global-set-key (kbd "C-x C-<up>") 'enlarge-window)
