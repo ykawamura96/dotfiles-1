@@ -7,7 +7,7 @@ sudo apt-get install git
 cd ~
 git clone https://github.com/708yamaguchi/dotfiles.git
 cd ./dotfiles/install_scripts
-sudo ./install_main.sh
+sudo ./install_main.sh  # this script may need to be executed twice
 ```
 
 ## 2. Create symbolic links to setting files
