@@ -105,3 +105,8 @@ Also, do not forget to check box of `Show current input source in the menu bar`.
 Next, click keyboard icon at upper right side of window, and select `Composition Mode -> Hiragana`.
 
 Then, select `Configure Current Input Method -> Global Config -> Hotkey -> Trigger Input Method and change CTRL_SHIFT to Zenkakuhankaku`.
+
+
+### Displaying System Load Indicator
+First, start `System Load Indicator` from `Search your computer` (ubuntu icon on the left side of desctop).
+Then, `System Load Indicator` icon appears at the upper right side of desctop, so click it and set preferences.
