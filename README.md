@@ -100,6 +100,7 @@ catkin build
 ### Setting Mozc for Japanese input
 First, at `System Settings -> Text Entry -> Input sources to use`,
 Add `Japanese` and `Mozc`.
+Also, do not forget to check box of `Show current input source in the menu bar`. This is an important step for switching input sources.
 
 Next, click keyboard icon at upper right side of window, and select `Composition Mode -> Hiragana`.
 
