@@ -15,8 +15,8 @@ else
     set -x
 
     HERE=$(pwd)
-    sudo apt-get purge emacs
-    sudo apt-get install build-essential
+    sudo apt-get purge emacs -y
+    sudo apt-get install build-essential -y
     sudo apt-get build-dep emacs24
 
     cd $HOME/Downloads

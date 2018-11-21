@@ -3,7 +3,7 @@
 ## 1. Install minimum required packages
 In this procedure, some `apt` and `pip` packages are installed.
 ```bash
-sudo apt-get install git
+sudo apt-get install git -y
 cd ~
 git clone https://github.com/708yamaguchi/dotfiles.git
 cd ./dotfiles/install_scripts
@@ -31,7 +31,7 @@ First, get `.deb` file from [google website](https://www.google.co.jp/chrome/).
 
 Next,
 ```bash
-sudo apt-get install libappindicator1
+sudo apt-get install libappindicator1 -y
 sudo dpkg -i (google-chrome-installer-name).deb
 ```
 Now, you can start `google chrome` by typing below:
@@ -76,9 +76,9 @@ For ROS installation, follow instructions in [ROS Installation](http://wiki.ros.
 After installing ROS, install some packages for `JSK` environment:
 ```bash
 exec bash
-sudo apt-get install python-catkin-tools
-sudo apt-get install ros-$(rosversion -d)-jsk-tools
-sudo apt-get install ros-$(rosversion -d)-rosemacs
+sudo apt-get install python-catkin-tools -y
+sudo apt-get install ros-$(rosversion -d)-jsk-tools -y
+sudo apt-get install ros-$(rosversion -d)-rosemacs -y
 ```
 
 In order to create ROS workspace, do
