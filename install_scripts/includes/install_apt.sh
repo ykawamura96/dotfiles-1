@@ -11,6 +11,7 @@ apt_packages=(
     git
     gnome-tweak-tool
     htop
+    lm-sensors
     ntp
     python-pip
     ssh
