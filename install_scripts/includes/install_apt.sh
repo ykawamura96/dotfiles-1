@@ -5,11 +5,13 @@ apt_packages=(
     apt
     aptitude
     # emacs
+    software-properties-common
+    ffmpeg  # after software-properties-common
     git
     gnome-tweak-tool
-    handbrake
     handbrake-cli
     handbrake-gtk
+    handbrake  # after handbrake-cli/gtk
     htop
     ibus-mozc
     indicator-multiload

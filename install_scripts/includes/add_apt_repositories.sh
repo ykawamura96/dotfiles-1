@@ -2,8 +2,9 @@
 
 # add apt repositories
 repositories=(
-    sylvain-pineau/kazam
-    stebbins/handbrake-releases
+    mc3man/trusty-media  # for ffmpeg
+    stebbins/handbrake-releases  # for handbrake
+    sylvain-pineau/kazam  # for kazam
 )
 
 for repository in ${repositories[@]}; do
