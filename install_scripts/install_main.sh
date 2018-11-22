@@ -2,6 +2,7 @@
 
 # execute scripts
 scripts=(
+    add_apt_repositories.sh
     install_apt.sh
     install_pip.sh
     unity_setup.sh

@@ -5,12 +5,16 @@ apt_packages=(
     apt
     aptitude
     # emacs
+    git
+    gnome-tweak-tool
+    handbrake
+    handbrake-cli
+    handbrake-gtk
+    htop
     ibus-mozc
     indicator-multiload
     ipython
-    git
-    gnome-tweak-tool
-    htop
+    kazam
     lm-sensors
     ntp
     python-pip
