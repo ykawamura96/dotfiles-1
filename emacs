@@ -11,7 +11,9 @@
 ;; (package-refresh-contents) or M-x package-refresh-contents
 (defvar package-list
   '(mozc
+    anzu
     auto-complete
+    dockerfile-mode
     ;; fuzzy
     trr
     flycheck
@@ -121,6 +123,10 @@
 (ac-config-default)
 (add-to-list 'ac-modes 'nxml-mode) ; nxml-modeを追加
 ;; (add-to-list 'ac-modes 'shell-mode) ; shell-modeを追加(eg. emacs-shell)
+(add-to-list 'ac-modes 'dockerfile-mode)
+(add-to-list 'ac-modes 'cmake-mode)
+(add-to-list 'ac-modes 'dockerfile-mode)
+(add-to-list 'ac-modes 'markdown-mode)
 (setq ac-delay 0.05) ; auto-completeまでの時間
 (setq ac-auto-show-menu 0.1) ; メニューが表示されるまで
 (setq ac-use-fuzzy t) ; 曖昧マッチを有効に
@@ -148,14 +154,27 @@
 (which-function-mode 1)
 
 ;; add extention to major mode
-(add-to-list 'auto-mode-alist '("\\.launch\\'" . xml-mode))
-(add-to-list 'auto-mode-alist '("\\.xml\\'" . xml-mode))
-(add-to-list 'auto-mode-alist '("\\.*bashrc.*\\'" . shell-script-mode))
-(add-to-list 'auto-mode-alist '("\\emacs\\'" . lisp-mode))
-(add-to-list 'auto-mode-alist '("\\.emacs\\'" . lisp-mode))
-(add-to-list 'auto-mode-alist '("\\.ino\\'" . c-mode))
-(add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
-
+(require 'dockerfile-mode)
+(setq auto-mode-alist
+      (append '(
+                ("CMakeLists\\.txt\\'" . cmake-mode)
+                ("Dockerfile\\'" . dockerfile-mode)
+                ("\\.*bashrc.*\\'" . shell-script-mode)
+                ("\\.cfg\\'" . python-mode)
+                ("\\.cu\\'" . c++-mode)
+                ("\\emacs\\'" . lisp-mode)
+                ("\\.emacs\\'" . lisp-mode)
+                ("\\.h\\'" . c++-mode)
+                ("\\.ino\\'" . c-mode)
+                ("\\.md\\'" . markdown-mode)
+                ("\\.launch\\'" . nxml-mode)
+                ("\\.rosinstall\\'" . yaml-mode)
+                ("\\.test\\'" . nxml-mode)
+                ("\\.world\\'" . nxml-mode)
+                ("\\.xml\\'" . nxml-mode)
+                ("\\.ya?ml\\'" . yaml-mode)
+                )
+              auto-mode-alist))
 
 ;; For Team K. This style of indentation is NOT recommended!!
 (add-hook 'lisp-mode-hook #'(lambda () (put 'if 'lisp-indent-function 1)))
@@ -221,3 +240,12 @@
         xsel-output )))
   (setq interprogram-cut-function 'xsel-cut-function)
     (setq interprogram-paste-function 'xsel-paste-function))
+
+
+;; Show counts of matching pattern while searcing
+(require 'anzu)
+(global-anzu-mode 1)
+(custom-set-variables
+ '(anzu-mode-lighter "")
+ '(anzu-deactivate-region t)
+  '(anzu-search-threshold 1000))
