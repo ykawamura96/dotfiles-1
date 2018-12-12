@@ -156,7 +156,7 @@ bind -x '"\C-r": _replace_by_history'
 
 _rostopic_list_percol() {
   local l=$(rostopic list | percol)
-  READLINE_LINE="$READLINE_LINE $l"
+  READLINE_LINE="$READLINE_LINE$l"
   READLINE_POINT=${#l}
 }
 bind -x '"\C-o": _rostopic_list_percol'
@@ -281,3 +281,5 @@ ibus-daemon -d -x
 
 # record date and time in history
 HISTTIMEFORMAT='%Y-%m-%dT%T%z '
+
+export OPENHRPHOME=~/prog/OpenHRP
