@@ -282,4 +282,8 @@ ibus-daemon -d -x
 # record date and time in history
 HISTTIMEFORMAT='%Y-%m-%dT%T%z '
 
+# inaba sensei
 export OPENHRPHOME=~/prog/OpenHRP
+
+# export path
+export PATH=$PATH:$HOME/.local/bin
