@@ -4,7 +4,7 @@
 apt_packages=(
     apt
     aptitude
-    # emacs
+    emacs24
     software-properties-common
     ffmpeg  # after software-properties-common
     git
