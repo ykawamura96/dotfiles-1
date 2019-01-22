@@ -91,7 +91,7 @@ wstool init .
 wstool set ~~~
 wstool update
 rosdep update
-rosdep isntall --from-paths . --ignore-src -y -r
+rosdep install --from-paths . --ignore-src -y -r
 cd ..
 catkin build
 exec bash # if you cannot source your workspace, type 'sudo updatedb'. This command updates database for 'locate' command.
