@@ -287,3 +287,12 @@ export OPENHRPHOME=~/prog/OpenHRP
 
 # export path
 export PATH=$PATH:$HOME/.local/bin
+
+# make emacs tags if it does not exist
+ls /tmp/TAGS >/dev/null 2>&1
+if [ $? -ne 0 ]; then
+    (cd /tmp;
+     for f in $(find $(rospack find euslisp) -name "*.l"); do
+         etags $f --append
+     done)
+fi

@@ -249,3 +249,7 @@
  '(anzu-mode-lighter "")
  '(anzu-deactivate-region t)
   '(anzu-search-threshold 1000))
+
+;; set tags for euslisp
+(visit-tags-table "/tmp")
+;; (setq tags-table-list '("/tmp"))
