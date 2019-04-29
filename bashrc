@@ -276,8 +276,8 @@ export PATH=/usr/local/cuda/bin:${PATH}
 export LD_LIBRARY_PATH=/usr/local/cuda/lib64:${LD_LIBRARY_PATH}
 
 ## for japanese input using ibus-mozc
-killall ibus-daemon > /dev/null
-ibus-daemon -d -x
+# killall ibus-daemon > /dev/null
+# ibus-daemon -d -x
 
 # record date and time in history
 HISTTIMEFORMAT='%Y-%m-%dT%T%z '
