@@ -100,7 +100,7 @@ exec bash # if you cannot source your workspace, type 'sudo updatedb'. This comm
 
 ### Setting Mozc for Japanese input
 First, at `System Settings -> Text Entry -> Input sources to use`,
-Add `Japanese` and `Mozc`.
+Add only `Mozc`. (Do NOT add `japanese`. This is to switch Japanese input and English input within `Mozc`)
 Also, do not forget to check box of `Show current input source in the menu bar`. This is an important step for switching input sources.
 
 Next, click keyboard icon at upper right side of window, and select `Composition Mode -> Hiragana`.
