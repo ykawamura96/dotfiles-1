@@ -303,9 +303,9 @@ function jaxon(){
     echo ""
     echo "[Control JAXON]"
     echo "roseus \`rospack find hrpsys_ros_bridge_tutorials\`/euslisp/jaxon_red-interface.l"
-    echo "(jaxon_red)                  ## set *jaxon_red*"
-    echo "(setq *robot* *jaxon_red*)   ## set *robot*"
-    echo "(jaxon_red-init)             ## set *ri*"
+    echo "(jaxon_red)                  ;; set *jaxon_red*"
+    echo "(setq *robot* *jaxon_red*)   ;; set *robot*"
+    echo "(jaxon_red-init)             ;; set *ri*"
     source /opt/ros/$ROS_DISTRO/setup.bash;
     source $HOME/agent-system/choreonoid_ws/devel/setup.bash;
     export CNOID_INSTALL_DIR=/usr/local/choreonoid;
