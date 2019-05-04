@@ -22,6 +22,7 @@ apt_packages=(
     python-pip
     ssh
     subversion
+    vlc
     xsel
     wget
 )
