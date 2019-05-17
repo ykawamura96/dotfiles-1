@@ -20,6 +20,7 @@ apt_packages=(
     lm-sensors
     ntp
     python-pip
+    silversearcher-ag
     ssh
     subversion
     vlc
