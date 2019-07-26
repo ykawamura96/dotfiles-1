@@ -11,6 +11,7 @@ scripts=(
     install_tmux2.5.sh
     install_anaconda.sh
     install_mozc.sh
+    install_hub.sh
 )
 
 progress="";
