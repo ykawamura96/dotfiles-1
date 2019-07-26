@@ -139,6 +139,7 @@ alias gup='git pull --rebase'
 alias gvt='git verify-tag'
 alias gwc='git whatchanged -p --abbrev-commit --pretty=medium'
 alias gwip='git add -A; git ls-files --deleted -z | xargs -r0 git rm; git commit -m "--wip--"'
+eval "$(hub alias -s)" # equals to $ alias git=hub
 
 # others
 alias jmanual='open /opt/ros/indigo/share/jskeus/doc/jmanual.pdf && exit'
