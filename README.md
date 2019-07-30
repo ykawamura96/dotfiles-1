@@ -71,7 +71,7 @@ sudo service ssh restart
 At last, make and edit `~/.ssh/authorized_keys` and `~/.ssh/config`
 
 ### Setting ntp
-For security, `disable monitor` in `/etc/ntp.conf`. Then,
+For security, write `disable monitor` to `/etc/ntp.conf`. Then,
 ```bash
 sudo service ntp restart
 ```
