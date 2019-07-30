@@ -20,11 +20,17 @@ At this stage, there are some errors which is solved at later stages.
 
 ## 3. Others
 ### Make Caps additional Ctrl
+For ubuntu 16.04 or older
 ```bash
 gnome-tweak-tool
 ```
 Select `Typing -> Caps Lock key behavior -> Make Caps Lock an additinal Ctrl`
 
+For ubuntu 18.04 or newer.
+```bash
+sudo emacs -nw /etc/default/keyboard
+```
+and write `XKBOPTIONS="ctrl:nocaps" `.
 
 ### Use google-chrome
 First, get `.deb` file from [google website](https://www.google.co.jp/chrome/).
