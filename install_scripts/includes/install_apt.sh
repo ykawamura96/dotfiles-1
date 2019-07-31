@@ -4,6 +4,7 @@
 apt_packages=(
     apt
     aptitude
+    curl
     emacs
     software-properties-common
     ffmpeg  # after software-properties-common
