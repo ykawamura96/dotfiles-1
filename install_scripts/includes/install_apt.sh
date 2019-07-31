@@ -20,6 +20,7 @@ apt_packages=(
     kazam
     lm-sensors
     ntp
+    portaudio19-dev # for pyaudio. before pyaudio (in pip install)
     python-pip
     silversearcher-ag
     ssh

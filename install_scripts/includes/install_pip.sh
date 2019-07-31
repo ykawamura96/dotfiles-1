@@ -7,6 +7,7 @@ pip_packages=(
     matplotlib
     numpy
     percol
+    pyaudio
 )
 for pip_package in ${pip_packages[@]}; do
     pip install $pip_package;
