@@ -78,6 +78,7 @@
       ;; character ?\xBB at that column followed by a TAB which goes to
       ;; the next TAB column.
       ;; If this is a problem for you, please, comment the line below.
+      nil
 )
 
 ;; ¥¹¥Ú¡¼¥¹¤ÏÁ´³Ñ¤Î¤ß¤ò²Ä»ë²½
