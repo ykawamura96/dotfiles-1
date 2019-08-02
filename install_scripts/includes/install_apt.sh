@@ -22,6 +22,7 @@ apt_packages=(
     ntp
     portaudio19-dev # for pyaudio. before pyaudio (in pip install)
     python-pip
+    ruby
     silversearcher-ag
     ssh
     subversion
