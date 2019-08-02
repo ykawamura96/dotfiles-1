@@ -288,13 +288,16 @@ export OPENHRPHOME=~/prog/OpenHRP
 # export path
 export PATH=$PATH:$HOME/.local/bin
 
-# make emacs tags if it does not exist
-ls /tmp/TAGS >/dev/null 2>&1
-if [ $? -ne 0 ]; then
-    (cd /tmp;
-     for f in $(find $(rospack find euslisp) -name "*.l"); do
-         etags $f --append
-     done)
+# make emacs tags if euslisp package exists and the tags does not exist
+rospack find euslisp >/dev/null 2>&1
+if [ $? -eq 0 ]; then
+    ls /tmp/TAGS >/dev/null 2>&1
+    if [ $? -ne 0 ]; then
+        (cd /tmp;
+         for f in $(find $(rospack find euslisp) -name "*.l"); do
+             etags $f --append
+         done)
+    fi
 fi
 
 function jaxon(){
