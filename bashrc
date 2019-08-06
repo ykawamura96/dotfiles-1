@@ -300,6 +300,13 @@ if [ $? -eq 0 ]; then
     fi
 fi
 
+# complete *.md when pressing Tab after typing 'google-chrome' in bash
+function _complete_md(){
+    local cur=${COMP_WORDS[COMP_CWORD]}
+    COMPREPLY=( $(compgen -W "$(ls *.md)" -- $cur) )
+}
+complete -F _complete_md google-chrome
+
 function jaxon(){
     echo "[Launch Choreonoid]"
     echo "rtmlaunch hrpsys_choreonoid_tutorials jaxon_red_choreonoid.launch USE_VISION:=False";
