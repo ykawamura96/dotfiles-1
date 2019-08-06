@@ -14,6 +14,7 @@
     anzu
     auto-complete
     dockerfile-mode
+    edit-server
     ;; fuzzy
     trr
     flycheck
@@ -254,3 +255,9 @@
 ;; set tags for euslisp
 (visit-tags-table "/tmp")
 ;; (setq tags-table-list '("/tmp"))
+
+;; start emacs server to use emacs on google chrome
+(when (locate-library "edit-server")
+  (require 'edit-server)
+  (defvar edit-server-new-frame nil)    ; 新しいフレームは開かない
+  (edit-server-start))
