@@ -300,12 +300,12 @@ if [ $? -eq 0 ]; then
     fi
 fi
 
-# complete *.md when pressing Tab after typing 'google-chrome' in bash
-function _complete_md(){
+# complete all files when pressing Tab after typing 'google-chrome' in bash
+function _complete_all_files(){
     local cur=${COMP_WORDS[COMP_CWORD]}
-    COMPREPLY=( $(compgen -W "$(ls *.md)" -- $cur) )
+    COMPREPLY=( $(compgen -W "$(ls *)" -- $cur) )
 }
-complete -F _complete_md google-chrome
+complete -F _complete_all_files google-chrome
 
 function jaxon(){
     echo "[Launch Choreonoid]"
