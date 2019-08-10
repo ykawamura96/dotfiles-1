@@ -12,7 +12,7 @@ scripts=(
     install_anaconda.sh
     install_mozc.sh
     install_hub.sh
-    change_own.sh
+    change_permission.sh
 )
 
 progress="";

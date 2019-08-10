@@ -2,11 +2,11 @@
 
 # directories which should be accessible
 directories=(
-    ~/.emacs.d
-    ~/.local
+    ~/.emacs.d/
+    ~/.local/
 )
 
 for directory in ${directories[@]}; do
-    chown -R $(whoami) $directory;
-    echo -e "change own of $directory";
+    chmod -R 777 $directory
+    echo -e "change permission of $directory to 777";
 done;
