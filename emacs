@@ -253,7 +253,8 @@
   '(anzu-search-threshold 1000))
 
 ;; set tags for euslisp
-(visit-tags-table "/tmp")
+(if (file-exists-p "/tmp/TAGS")
+  (visit-tags-table "/tmp"))
 ;; (setq tags-table-list '("/tmp"))
 
 ;; start emacs server to use emacs on google chrome
