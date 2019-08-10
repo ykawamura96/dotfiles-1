@@ -7,7 +7,7 @@ scripts=(
     install_pip.sh
     unity_setup.sh
     # install_emacs_24_4.sh
-    install_ffmpeg.sh
+    # install_ffmpeg.sh
     install_tmux2.5.sh
     install_anaconda.sh
     install_mozc.sh
