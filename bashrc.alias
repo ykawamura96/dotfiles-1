@@ -142,7 +142,7 @@ alias gwip='git add -A; git ls-files --deleted -z | xargs -r0 git rm; git commit
 eval "$(hub alias -s)" # equals to $ alias git=hub
 
 # others
-alias jmanual='open /opt/ros/indigo/share/jskeus/doc/jmanual.pdf && exit'
+alias jmanual='open /opt/ros/$(rosversion -d)/share/jskeus/doc/jmanual.pdf && exit'
 alias grep='grep --color'
 alias colors='~/dotfiles/others/bash_colors.sh'
 if [ $(which gnome-open) ]; then
