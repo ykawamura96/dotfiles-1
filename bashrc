@@ -175,6 +175,10 @@ google () {
   google-chrome "http://www.google.com/search?q=$search"
 }
 
+chrome() {
+    google-chrome $@
+}
+
 
 source ~/.bashrc.alias
 
