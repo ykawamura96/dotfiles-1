@@ -10,8 +10,10 @@ alias e="emacs -nw "
 alias es="emacs -nw -f shell"
 alias eshel="emacs -nw -f shell"
 alias eshell="emacs -nw -f shell"
-
+CURRENT_DIR=$(pwd)
+cd $(dirname ${BASH_SOURCE:-$0}) # move to this directory
 source EMCAS/emacs.aliases.bash
+cd $CURRENT_DIR
 
 # ROS
 # alias
