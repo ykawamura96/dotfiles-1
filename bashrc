@@ -71,6 +71,7 @@ fi
 
 if [ "$color_prompt" = yes ]; then
     PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\] \[\033[01;37m\]\t\[\033[00m\]\[\e[1;34m\] \[\033[01;34m\]\w\[\033[00m\]\[\e[1;34m\]\[\e[m\]$(parse_branch)\n\$ '
+    # PS1='\[\e[1;32m\]test-user@test\[\e[m\]\n\$ ' # to hide real PS1
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
