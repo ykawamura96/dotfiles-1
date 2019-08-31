@@ -1,0 +1,3 @@
+[submodule "EMCAS"]
+	path = EMCAS
+	url = https://github.com/708yamaguchi/EMCAS.git
