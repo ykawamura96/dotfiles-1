@@ -4,6 +4,7 @@
 apt_packages=(
     apt
     aptitude
+    colordiff
     curl
     emacs
     software-properties-common
