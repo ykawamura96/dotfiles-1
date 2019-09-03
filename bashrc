@@ -162,6 +162,13 @@ _rostopic_list_percol() {
 }
 bind -x '"\C-o": _rostopic_list_percol'
 
+# override diff command with colordiff
+diff () {
+  if [[ -x `which colordiff` ]]; then
+      colordiff $@ | less -R
+  fi
+}
+
 # image_view
 image_view () {
   rosrun image_view image_view image:=$@
