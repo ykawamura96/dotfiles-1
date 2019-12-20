@@ -166,6 +166,11 @@ bind -x '"\C-o": _rostopic_list_percol'
 diff () {
   if [[ -x `which colordiff` ]]; then
       colordiff $@ | less -R
+  else
+      echo "colordiff is not installed. Please install colordiff by typing:"
+      echo "sudo apt install colordiff"
+      echo ""
+      command diff $@
   fi
 }
 
