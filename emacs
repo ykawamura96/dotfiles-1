@@ -88,6 +88,7 @@
 ;; ÊÝÂ¸Á°¤Ë¼«Æ°¤Ç¥¯¥ê¡¼¥ó¥¢¥Ã¥×
 (setq whitespace-action '(auto-cleanup))
 
+;; If Emacs visualization become strange, do 'M-x global-whitespace-mode' to kill this function
 (global-whitespace-mode 1)
 
 (setq background-color "white")
@@ -103,7 +104,7 @@
                     :underline nil)
 (set-face-attribute 'whitespace-empty nil ;show ??
                     :background whitespace-bg-color
-		    :underline nil)
+                    :underline nil)
 (set-face-attribute 'whitespace-tab nil ;show tab
                     :background background-color
                     :underline nil)
