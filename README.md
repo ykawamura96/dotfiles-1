@@ -119,10 +119,16 @@ Then, select `Configure Current Input Method -> Global Config -> Hotkey -> Trigg
 
 At `Settings -> Region & Language -> Input Sources`, add `Japanese (Mozc)` and remove `Japanese`.
 
-Then, push `Manage Installed Languages` button.
+Then, push `Manage Installed Languages` button. At this time, you can change keyboard layout by changing input source. (e.g. If you choose only japanese input, the keyboard layout will be japanese.)
 
 Finally, you can change input sources by Zenkaku-hankaku key.
 
 ### Displaying System Load Indicator
+- For Unity (16.04 or older)
+
 First, start `System Load Indicator` from `Search your computer` (ubuntu icon on the left side of desctop).
 Then, `System Load Indicator` icon appears at the upper right side of desctop, so click it and set preferences.
+
+- For GNOME (18.04 or newer)
+
+Open Tweaks by typing `gnome-tweaks`. Then, select `Extensions` and turn on the `System-monitor`. After that, you can show system-monitor on desktop.
