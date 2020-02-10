@@ -57,7 +57,7 @@ In `/etc/ssh/sshd_config`, (`sshd_config`, not `ssh_config`)
 PermitRootLogin no
 PasswordAuthentication no
 ```
-Next, save the `~/.ssh/rsa.pub` to your github repository.
+Next, save the `~/.ssh/id_rsa.pub` to your github repository.
 
 If you want to ssh to your computer,
 ```bash
