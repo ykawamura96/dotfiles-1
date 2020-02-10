@@ -5,7 +5,6 @@ scripts=(
     add_apt_repositories.sh
     install_apt.sh
     install_pip.sh
-    unity_setup.sh
     # install_emacs_24_4.sh
     # install_ffmpeg.sh
     install_tmux2.5.sh
@@ -14,6 +13,13 @@ scripts=(
     install_hub.sh
     change_permission.sh
 )
+
+version=$(lsb_release -rs)
+if [ ${version%.*} -gt 16 ]; then
+    scripts+=(gnome_setup.sh) # 18.04 or newer
+else
+    scripts+=(unity_setup.sh) # 16.04 or older
+fi
 
 progress="";
 loop_count=1;
