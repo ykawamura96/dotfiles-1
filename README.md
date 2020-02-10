@@ -5,7 +5,7 @@ In this procedure, some `apt` and `pip` packages are installed.
 ```bash
 sudo apt-get install git -y
 cd ~
-git clone https://github.com/708yamaguchi/dotfiles.git
+git clone https://github.com/708yamaguchi/dotfiles.git --recursive # use --recursive to install submodules
 cd ./dotfiles/install_scripts
 sudo ./install_main.sh  # this script may need to be executed twice
 ```
