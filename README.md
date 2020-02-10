@@ -105,6 +105,8 @@ exec bash # if you cannot source your workspace, type 'sudo updatedb'. This comm
 
 
 ### Setting Mozc for Japanese input
+- For Unity (16.04 or older)
+
 First, at `System Settings -> Text Entry -> Input sources to use`,
 Add only `Mozc`. (Do NOT add `japanese`. This is to switch Japanese input and English input within `Mozc`)
 Also, do not forget to check box of `Show current input source in the menu bar`. This is an important step for switching input sources.
@@ -113,6 +115,13 @@ Next, click keyboard icon at upper right side of window, and select `Composition
 
 Then, select `Configure Current Input Method -> Global Config -> Hotkey -> Trigger Input Method and change CTRL_SHIFT to Zenkakuhankaku`.
 
+- For GNOME (18.04 or newer)
+
+At `Settings -> Region & Language -> Input Sources`, add `Japanese (Mozc)` and remove `Japanese`.
+
+Then, push `Manage Installed Languages` button.
+
+Finally, you can change input sources by Zenkaku-hankaku key.
 
 ### Displaying System Load Indicator
 First, start `System Load Indicator` from `Search your computer` (ubuntu icon on the left side of desctop).
