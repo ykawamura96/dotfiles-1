@@ -253,7 +253,11 @@
  '(anzu-deactivate-region t)
   '(anzu-search-threshold 1000))
 
-;; set tags for euslisp
+;; Set tags for euslisp. You can search for definition of funcitons.
+;; [Before loading .emacs]
+;; cd /tmp; etags $(rospack find euslisp)/jskeus/eus/lisp/l/*.l ## this line is written in bashrc
+;; [After loading .emacs]
+;; M-. (function name) ;; In emacs mini buffer
 (if (file-exists-p "/tmp/TAGS")
   (visit-tags-table "/tmp"))
 ;; (setq tags-table-list '("/tmp"))
