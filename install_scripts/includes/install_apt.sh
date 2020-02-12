@@ -10,7 +10,6 @@ apt_packages=(
     software-properties-common
     ffmpeg  # after software-properties-common
     git
-    gnome-tweak-tool
     handbrake-cli
     handbrake-gtk
     handbrake  # after handbrake-cli/gtk
@@ -31,6 +30,13 @@ apt_packages=(
     xsel
     wget
 )
+
+version=$(lsb_release -rs)
+if [ ${version%.*} -gt 16 ]; then # 18.04 or newer
+    # do nothing
+else                              # 16.04 or older
+    apt_packages+=(gnome-tweak-tool)
+fi
 
 for apt_package in ${apt_packages[@]}; do
     apt -y install $apt_package;
