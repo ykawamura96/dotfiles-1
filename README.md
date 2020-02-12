@@ -119,7 +119,13 @@ Then, select `Configure Current Input Method -> Global Config -> Hotkey -> Trigg
 
 At `Settings -> Region & Language -> Input Sources`, add `Japanese (Mozc)` and remove `Japanese`.
 
-Then, push `Manage Installed Languages` button. At this time, you can change keyboard layout by changing input source. (e.g. If you choose only japanese input, the keyboard layout will be japanese.)
+Then, push `Manage Installed Languages` button.
+
+To set ibus-mozc default keyboard layout as Japanese one, edit the settings file (`/usr/share/ibus/component/mozc.xml`) like below:
+```
+# <layout>default</layout>
+<layout>jp</layout>
+```
 
 Finally, you can change input sources by Zenkaku-hankaku key.
 
@@ -132,3 +138,4 @@ Then, `System Load Indicator` icon appears at the upper right side of desctop, s
 - For GNOME (18.04 or newer)
 
 Open Tweaks by typing `gnome-tweaks`. Then, select `Extensions` and turn on the `System-monitor`. After that, you can show system-monitor on desktop.
+
