@@ -136,6 +136,9 @@
 
 ;; flycheck
 (add-hook 'after-init-hook #'global-flycheck-mode)
+;; If you cannot enable python-flake8, do the emacs command below:
+;; 1. "C-u C-c ! x [Enter]" in python-mode. (You will be asked "Enable syntax checker")
+;; 2. "python-flake8 [Enter]"
 (add-hook 'python-mode-hook '(lambda () (flycheck-select-checker 'python-flake8)))
 
 ;; 行数を表示する
