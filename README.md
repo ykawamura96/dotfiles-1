@@ -57,7 +57,10 @@ In `/etc/ssh/sshd_config`, (`sshd_config`, not `ssh_config`)
 PermitRootLogin no
 PasswordAuthentication no
 ```
-Next, save the `~/.ssh/id_rsa.pub` to your github repository.
+Next, save the `~/.ssh/id_rsa.pub` to your github repository. (Change `USERNAME` to your github username)
+```
+USERNAME=708yamaguchi; curl -u $USERNAME --data '{"title":"'"$(whoami)@$(hostname)"'","key":"'"$(cat ~/.ssh/id_rsa.pub)"'"}' https://api.github.com/user/keys
+```
 
 If you want to ssh to your computer,
 ```bash
