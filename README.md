@@ -97,7 +97,7 @@ wstool init .
 wstool set ~~~
 wstool update
 rosdep update
-rosdep install --from-paths . --ignore-src -y -r
+rosdep install --from-paths . --ignore-src -y -r  # make sure that $ROS_DISTRO is correctly set.
 cd ..
 catkin build
 exec bash # if you cannot source your workspace, type 'sudo updatedb'. This command updates database for 'locate' command.
@@ -138,4 +138,3 @@ Then, `System Load Indicator` icon appears at the upper right side of desctop, s
 - For GNOME (18.04 or newer)
 
 Open Tweaks by typing `gnome-tweaks`. Then, select `Extensions` and turn on the `System-monitor`. After that, you can show system-monitor on desktop.
-
