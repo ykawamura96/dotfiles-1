@@ -19,6 +19,7 @@ apt_packages=(
     ipython
     kazam
     lm-sensors
+    net-tools
     ntp
     portaudio19-dev # for pyaudio. before pyaudio (in pip install)
     python-pip
