@@ -27,6 +27,7 @@ apt_packages=(
     silversearcher-ag
     ssh
     subversion
+    tree
     vlc
     xsel
     wget
