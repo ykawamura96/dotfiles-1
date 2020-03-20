@@ -140,6 +140,7 @@
 ;; 1. "C-u C-c ! x [Enter]" in python-mode. (You will be asked "Enable syntax checker")
 ;; 2. "python-flake8 [Enter]"
 (add-hook 'python-mode-hook '(lambda () (flycheck-select-checker 'python-flake8)))
+(setq flycheck-python-flake8-executable "flake8")
 
 ;; 行数を表示する
 (global-linum-mode t)
