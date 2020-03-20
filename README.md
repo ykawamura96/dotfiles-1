@@ -3,11 +3,14 @@
 ## 1. Install minimum required packages
 In this procedure, some `apt` and `pip` packages are installed.
 ```bash
-sudo apt-get install git -y
+sudo sh -c "
+apt update
+apt install git -y
 cd ~
 git clone https://github.com/708yamaguchi/dotfiles.git --recursive # use --recursive to install submodules
 cd ./dotfiles/install_scripts
-sudo ./install_main.sh  # this script may need to be executed twice
+./install_main.sh  # this script may need to be executed twice
+"
 ```
 
 ## 2. Create symbolic links to setting files
@@ -85,9 +88,7 @@ For ROS installation, follow instructions in [ROS Installation](http://wiki.ros.
 After installing ROS, install some packages for `JSK` environment:
 ```bash
 exec bash
-sudo apt-get install python-catkin-tools -y
-sudo apt-get install ros-$(rosversion -d)-jsk-tools -y
-sudo apt-get install ros-$(rosversion -d)-rosemacs -y
+sudo apt-get install -y python-catkin-tools ros-$(rosversion -d)-jsk-tools ros-$(rosversion -d)-rosemacs
 ```
 
 In order to create ROS workspace, do
