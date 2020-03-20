@@ -35,7 +35,7 @@ apt_packages=(
 
 version=$(lsb_release -rs)
 if [ ${version%.*} -gt 16 ]; then # 18.04 or newer
-    echo "no additional packages for ubuntu 18.04"
+    apt_packages+=(gnome-tweaks)
 else                              # 16.04 or older
     apt_packages+=(gnome-tweak-tool)
 fi
