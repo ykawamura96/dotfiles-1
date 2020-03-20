@@ -127,7 +127,7 @@ Then, push `Manage Installed Languages` button.
 
 To set ibus-mozc default keyboard layout as Japanese one, edit the settings file (`/usr/share/ibus/component/mozc.xml`) like below:
 ```
-# <layout>default</layout>
+<!-- <layout>default</layout> -->
 <layout>jp</layout>
 ```
 
