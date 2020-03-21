@@ -9,7 +9,6 @@ cd ~; \
 git clone https://github.com/708yamaguchi/dotfiles.git --recursive; \ # use --recursive to install submodules
 cd ./dotfiles/install_scripts; \
 sudo ./install_main.sh; \  # this script may need to be executed twice
-"
 ```
 
 ## 2. Create symbolic links to setting files
