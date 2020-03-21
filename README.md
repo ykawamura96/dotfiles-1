@@ -6,9 +6,9 @@ In this procedure, some `apt` and `pip` packages are installed.
 sudo apt update; \
 sudo apt install git -y; \
 cd ~; \
-git clone https://github.com/708yamaguchi/dotfiles.git --recursive; \ # use --recursive to install submodules
+git clone https://github.com/708yamaguchi/dotfiles.git --recursive; : "use --recursive to install submodules"; \
 cd ./dotfiles/install_scripts; \
-sudo ./install_main.sh  # this script may need to be executed twice
+sudo ./install_main.sh; : "this script may need to be executed twice";
 ```
 
 ## 2. Create symbolic links to setting files
