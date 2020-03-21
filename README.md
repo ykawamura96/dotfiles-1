@@ -3,13 +3,12 @@
 ## 1. Install minimum required packages
 In this procedure, some `apt` and `pip` packages are installed.
 ```bash
-sudo sh -c "
-apt update
-apt install git -y
-cd ~
-git clone https://github.com/708yamaguchi/dotfiles.git --recursive # use --recursive to install submodules
-cd ./dotfiles/install_scripts
-./install_main.sh  # this script may need to be executed twice
+sudo apt update; \
+sudo apt install git -y; \
+cd ~; \
+git clone https://github.com/708yamaguchi/dotfiles.git --recursive; \ # use --recursive to install submodules
+cd ./dotfiles/install_scripts; \
+sudo ./install_main.sh; \  # this script may need to be executed twice
 "
 ```
 
