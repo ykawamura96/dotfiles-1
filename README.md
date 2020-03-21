@@ -40,7 +40,6 @@ First, get `.deb` file from [google website](https://www.google.co.jp/chrome/).
 
 Next,
 ```bash
-sudo apt-get install libappindicator1 -y
 sudo dpkg -i (google-chrome-installer-name).deb
 ```
 Now, you can start `google chrome` by typing below:

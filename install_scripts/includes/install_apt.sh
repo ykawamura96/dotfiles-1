@@ -18,6 +18,7 @@ apt_packages=(
     indicator-multiload
     ipython
     kazam
+    libappindicator1 # before installing google-chrome.deb
     lm-sensors
     net-tools
     ntp
