@@ -305,6 +305,9 @@ export OPENHRPHOME=~/prog/OpenHRP
 # export path
 export PATH=$PATH:$HOME/.local/bin
 
+# turn off error sound for Ubuntu 18.04
+bind 'set bell-style none'
+
 # make emacs tags if euslisp package exists and the tags does not exist
 rospack find euslisp >/dev/null 2>&1
 if [ $? -eq 0 ]; then
