@@ -274,3 +274,7 @@
 
 ;; turn off error sound for Ubuntu 18.04
 (setq visible-bell t)
+
+;; open emacs shell on current window (do not open new window) from Emacs 25.1
+(add-to-list 'display-buffer-alist
+     '("^\\*shell\\*$" . (display-buffer-same-window)))
