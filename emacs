@@ -271,3 +271,6 @@
   (require 'edit-server)
   (defvar edit-server-new-frame nil)    ; 新しいフレームは開かない
   (edit-server-start))
+
+;; turn off error sound for Ubuntu 18.04
+(setq visible-bell t)
